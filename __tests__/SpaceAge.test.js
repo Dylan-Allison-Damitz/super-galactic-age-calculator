@@ -45,6 +45,6 @@ describe("SpaceAge", () => {
     });
     test('should correctly return years lived past lifespan on Mercury', () => {
       let gonePastMercury = new SpaceAge(32, "Mercury");
-      expect(gonePastMercury.yearsPast()).toEqual(47.36);
+      expect(gonePastMercury.yearsPast()).toEqual(47.16);
     });
 });

@@ -30,6 +30,9 @@ export default class SpaceAge {
     }
   }
   yearsPast() {
-  
+    if (this.planet === "Mercury") {
+      let youveExpired = ((this.earthAge * 4.13) - 85);
+      return youveExpired
+    }
   }
 }
