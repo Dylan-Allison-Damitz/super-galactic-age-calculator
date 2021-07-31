@@ -35,4 +35,8 @@ describe("SpaceAge", () => {
       let spanVenus = new SpaceAge(32, "Venus");
       expect(spanVenus.lifeSpan()).toEqual(33.16);
     });
+    test('should correctly return the users life expectancy on Mars', () => {
+      let spanMars = new SpaceAge(32, "Mars");
+      expect(spanMars.lifeSpan()).toEqual(68.04);
+    });
 });
