@@ -8,4 +8,8 @@ describe("SpaceAge", () => {
         expect(ageSpace.planetAge).toEqual(133);
         expect(ageSpace.lifeExpectancy).toEqual(-48);
     });
+    test('should correctly return the users current age on planet Earth', () => {
+        let earthYear = new SpaceAge(32);
+        expect(earthYear.earthAge).toEqual(32);
+  });
 });
