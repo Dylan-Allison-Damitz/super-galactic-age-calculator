@@ -6,7 +6,9 @@ export default class SpaceAge {
     }
 
     planetCalculator() {
-
-    }
+        if(this.planet === "Mercury") {
+            return this.earthAge * 4.14
+        }
+  }
 }
 
