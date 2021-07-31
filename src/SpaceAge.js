@@ -10,6 +10,8 @@ export default class SpaceAge {
             return this.earthAge * 4.14
         } if(this.planet === "Venus") {
           return this.earthAge * 1.62
+        } if(this.planet === "Mars") {
+          return this.earthAge * 0.53
   }
 }
 }

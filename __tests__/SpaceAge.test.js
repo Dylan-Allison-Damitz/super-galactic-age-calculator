@@ -24,4 +24,8 @@ describe("SpaceAge", () => {
       let marsYear = new SpaceAge(32, "Mars");
       expect(marsYear.planetCalculator()).toEqual(16.96);
     });
+    test('should correctly return the users earth age in Jupiter years', () => {
+      let jupiterYear = new SpaceAge(32, "Jupiter");
+      expect(jupiterYear.planetCalculator()).toEqual(2.69);
+    });
 });
