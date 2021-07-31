@@ -12,5 +12,8 @@ describe("SpaceAge", () => {
         let earthYear = new SpaceAge(32);
         expect(earthYear.earthAge).toEqual(32);
     });
-    
+    test('should correctly return the users earth age in Mercury years', () => {
+      let mercuryYear = new SpaceAge(32, "Mercury");
+      expect(mercuryYear.earthAge).toEqual(132.48);
+  });
 });

@@ -4,4 +4,9 @@ export default class SpaceAge {
         this.planet = planet;
         this.lifeExpectancy = lifeExpectancy;
     }
-  }
+
+    planetCalculator() {
+
+    }
+}
+
