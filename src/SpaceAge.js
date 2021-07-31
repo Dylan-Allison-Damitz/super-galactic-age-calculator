@@ -15,9 +15,12 @@ export default class SpaceAge {
       }
     }
     lifeSpan() {
-      if(this.planet === "Mercury") {
-        let lifeExpectancy = this.earthAge * -1.48
-        return lifeExpectancy
-    }
+        if(this.planet === "Mercury") {
+          let lifeExpectancy = (this.earthAge * -1.48) 
+          return lifeExpectancy
+        } else if(this.planet === "Venus") {
+          let lifeExpectancy = (85 - (this.earthAge * 1.62));
+          return lifeExpectancy
   }
+}
 }
