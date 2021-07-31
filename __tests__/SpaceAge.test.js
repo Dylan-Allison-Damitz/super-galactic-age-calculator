@@ -43,4 +43,8 @@ describe("SpaceAge", () => {
       let spanJupiter = new SpaceAge(32, "Jupiter");
       expect(spanJupiter.lifeSpan()).toEqual(82.44);
     });
+    test('should correctly return years lived past lifespan on Mercury', () => {
+      let gonePastMercury = new SpaceAge(32, "Mercury");
+      expect(gonePastMercury.yearsPast()).toEqual(47.36);
+    });
 });
