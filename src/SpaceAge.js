@@ -24,6 +24,9 @@ export default class SpaceAge {
         } else if(this.planet === "Mars") {
           let lifeExpectancy = (85 - (this.earthAge * 0.52));
           return lifeExpectancy
+        } else if(this.planet === "Jupiter") {
+          let lifeExpectancy = (85 - (this.earthAge * 0.08));
+          return lifeExpectancy
   }
 }
 }
