@@ -1,5 +1,5 @@
 export default class SpaceAge {
-  constructor (earthAge, planet, planetAge, lifeExpectancy) {
+  constructor (earthAge, planetAge, lifeExpectancy) {
       this.earthAge = earthAge;
   }
 }
