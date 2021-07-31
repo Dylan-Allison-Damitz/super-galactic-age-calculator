@@ -15,5 +15,9 @@ describe("SpaceAge", () => {
     test('should correctly return the users earth age in Mercury years', () => {
       let mercuryYear = new SpaceAge(32, "Mercury");
       expect(mercuryYear.planetCalculator()).toEqual(132.48);
-  });
+    });
+    test('should correctly return the users earth age in Venus years', () => {
+      let venusYear = new SpaceAge(32, "Venus");
+      expect(venusYear.planetCalculator()).toEqual(51.91);
+    });
 });
