@@ -13,6 +13,7 @@ export default class SpaceAge {
           return this.earthAge * 0.53
         } else if (this.planet === "Jupiter") {
           return this.earthAge * 0.08
-  }
-}
+    }
+    lifeSpan()
+    }
 }

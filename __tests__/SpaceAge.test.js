@@ -32,4 +32,8 @@ describe("SpaceAge", () => {
       let jupiterYear = new SpaceAge(32, "Jupiter");
       expect(jupiterYear.planetCalculator()).toEqual(2.56);
     });
+    test('should correctly return the users life expectancy on Mercury', () => {
+      let spanMercury = new SpaceAge(32, "Mercury", -47.48);
+      expect(spanMercury.lifeSpan()).toEqual(-47.48);
+    });
 });
