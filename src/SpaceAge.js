@@ -1,8 +1,7 @@
 export default class SpaceAge {
-    constructor (earthAge, planet, lifeExpectancy) {
+    constructor (earthAge, planet) {
         this.earthAge = earthAge;
         this.planet = planet;
-        this.lifeExpectancy = lifeExpectancy;
     }
     planetCalculator() {
         if(this.planet === "Mercury") {
@@ -13,7 +12,11 @@ export default class SpaceAge {
           return this.earthAge * 0.53
         } else if (this.planet === "Jupiter") {
           return this.earthAge * 0.08
+      }
     }
-    lifeSpan()
+    lifeSpan() {
+      if(this.planet === "Mercury") {
+        return (this.lifeExpectancy - this.earthAge) * 4.14;
     }
+  }
 }

@@ -2,20 +2,15 @@ import SpaceAge from "../src/SpaceAge";
 
 describe("SpaceAge", () => {
 
-    test('should correctly create an object that contains three parameters', () => {
-        let ageSpace = new SpaceAge(32, "Mercury", -48)
+    test('should correctly create an object that contains two parameters', () => {
+        let ageSpace = new SpaceAge(32, "Mercury")
         expect(ageSpace.earthAge).toEqual(32);
         expect(ageSpace.planet).toEqual("Mercury");
-        expect(ageSpace.lifeExpectancy).toEqual(-48);
     });
     test('should correctly return the users current age on planet Earth', () => {
         let earthYear = new SpaceAge(32);
         expect(earthYear.earthAge).toEqual(32);
     });
-    test('should correctly return the users life expectancy on planet Earth', () => {
-      let expectedLife = new SpaceAge(85);
-      expect(expectedLife.earthAge).toEqual(85);
-  });
     test('should correctly return the users earth age in Mercury years', () => {
       let mercuryYear = new SpaceAge(32, "Mercury");
       expect(mercuryYear.planetCalculator()).toEqual(132.48);
