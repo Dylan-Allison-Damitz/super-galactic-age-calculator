@@ -12,6 +12,10 @@ describe("SpaceAge", () => {
         let earthYear = new SpaceAge(32);
         expect(earthYear.earthAge).toEqual(32);
     });
+    test('should correctly return the users life expectancy on planet Earth', () => {
+      let expectedLife = new SpaceAge(85);
+      expect(expectedLife.earthAge).toEqual(85);
+  });
     test('should correctly return the users earth age in Mercury years', () => {
       let mercuryYear = new SpaceAge(32, "Mercury");
       expect(mercuryYear.planetCalculator()).toEqual(132.48);
@@ -26,6 +30,6 @@ describe("SpaceAge", () => {
     });
     test('should correctly return the users earth age in Jupiter years', () => {
       let jupiterYear = new SpaceAge(32, "Jupiter");
-      expect(jupiterYear.planetCalculator()).toEqual(2.69);
+      expect(jupiterYear.planetCalculator()).toEqual(2.56);
     });
 });
